@@ -20,6 +20,7 @@ The protocol uses the following format:
 ### Example:
 ```json
 {"type":"greet"}|{"msg":"Hello Server"}
+```
 
 Header and payload are encoded as JSON strings.
 
@@ -28,25 +29,33 @@ A pipe (|) separates the header from the payload.
 Getting Started --
 
  Clone the Repo-
+ ```
  git clone https://github.com/your-username/custom-protocol-node.git
 cd custom-protocol-node
+```
 
  Install Dependencies-
 No external dependencies required — just make sure Node.js is installed.
 
 Run the TCP Server-
+```
 node server.js
+```
 
 You should see:
 Server listening on port 9000
 
 Test with Dynamic Client
+```
 node dynamicClient.js
+```
 
 Example Inputs:
+```
 Message type: greet
 
 Payload: {"name": "Dev"}
+```
 
 📦 Available Message Types -
 
