@@ -18,8 +18,10 @@ The protocol uses the following format:
 
 
 ### Example:
-```json
+
+```
 {"type":"greet"}|{"msg":"Hello Server"}
+
 ```
 
 Header and payload are encoded as JSON strings.
